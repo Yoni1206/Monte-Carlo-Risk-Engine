@@ -51,7 +51,7 @@ $$\nu \approx \frac{P(S_0, \sigma+\delta \sigma)-P(S_0, \sigma-\delta \sigma)}{2
 ## 📊 Visual Analytics & Dashboards
 
 ### 1. Stochastic Trajectories (GBM)
-![GBM Paths](assets/trajectories.png)
+![GBM Paths](https://raw.githubusercontent.com/YoniArbel/monte-carlo-risk-engine/main/assets/trajectories.png)
 *Visualization of 100 simulated asset paths across 252 trading days, demonstrating the exponential growth and variance dispersion over time.*
 
 ### 2. Monte Carlo Convergence
