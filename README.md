@@ -51,15 +51,15 @@ $$\nu \approx \frac{P(S_0, \sigma+\delta \sigma)-P(S_0, \sigma-\delta \sigma)}{2
 ## 📊 Visual Analytics & Dashboards
 
 ### 1. Stochastic Trajectories (GBM)
-Monte-Carlo-Risk-Engine/trajectories.png
+![GBM Paths](./assets/trajectories.png)
 *Visualization of 100 simulated asset paths across 252 trading days, demonstrating the exponential growth and variance dispersion over time.*
 
 ### 2. Monte Carlo Convergence
-![Convergence](assets/convergence.png)
+![Convergence](./assets/convergence.png)
 *Tracking the running mean of the Monte Carlo estimator as it asymptotically converges to the exact Black-Scholes analytical price (Law of Large Numbers).*
 
 ### 3. Payoff Probability Distribution
-![Distribution](assets/distribution.png)
+![Distribution](./assets/distribution.png)
 *Histogram showing the asymmetric risk profile of the discounted Call payoffs. The massive spike at zero represents all Out-of-The-Money (OTM) scenarios.*
 
 ---
