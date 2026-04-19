@@ -1,6 +1,6 @@
 # High-Performance Monte Carlo Pricing & Risk Engine
 
-Hi, I’m Yoni Arbel — combining Pure Mathematics at Sorbonne University and Business Administration at IE University, with a strong focus on quantitative finance. 
+Hi, I’m Yoni Arbel — combining Pure Mathematics at Sorbonne University and Business Administration at IE University, with a strong focus on market finance. 
 
 This repository contains a production-grade pricing and risk engine for European Vanilla Options. While standard academic projects often stop at pricing, this engine goes further by implementing a robust risk management framework, calculating first and second-order Greeks ($\Delta, \Gamma, \nu$) using Central Finite Differences and Common Random Numbers (CRN) for variance reduction.
 
@@ -32,7 +32,7 @@ $$C_0=e^{-rT} \mathbb{E}^{\mathbb{Q}}[\max(S_T-K, 0)]$$
 
 A naive Monte Carlo implementation uses nested loops, resulting in heavy computational overhead. This engine leverages array programming to compute millions of paths concurrently. 
 
-Furthermore, to calculate the Greeks reliably, the engine utilizes **Common Random Numbers (CRN)**. When shocking (bumping) the spot price or volatility to calculate sensitivities, using the *same* random matrix $Z$ isolates the effect of the parameter change, eliminating statistical noise.
+Furthermore, to calculate the Greeks reliably, the engine utilizes Common Random Numbers (CRN). When shocking (bumping) the spot price or volatility to calculate sensitivities, using the *same* random matrix $Z$ isolates the effect of the parameter change, eliminating statistical noise.
 
 ### Calculating The Greeks (Central Finite Differences)
 The engine calculates risk metrics using two-sided numerical differentiation:
@@ -70,4 +70,4 @@ $$\nu \approx \frac{P(S_0, \sigma+\delta \sigma)-P(S_0, \sigma-\delta \sigma)}{2
 
 To run the engine locally:
 ```bash
-python mc_pricer.py
+python monte-carlo-pricer.py
