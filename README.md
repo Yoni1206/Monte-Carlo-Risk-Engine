@@ -4,7 +4,7 @@ Hi, I’m Yoni Arbel — combining Pure Mathematics at Sorbonne University and B
 
 This repository contains a production-grade pricing and risk engine for European Vanilla Options. While standard academic projects often stop at pricing, this engine goes further by implementing a robust risk management framework, calculating first and second-order Greeks ($\Delta, \Gamma, \nu$) using Central Finite Differences and Common Random Numbers (CRN) for variance reduction.
 
-## 🚀 Key Features
+## Key Features
 * **Vectorized Monte Carlo Engine:** Simulates 1,000,000 price paths in ~0.02 seconds using pure `numpy` vectorization (zero `for` loops).
 * **Mathematical Benchmarking:** Real-time cross-validation against exact Black-Scholes analytical prices to compute absolute pricing errors.
 * **Advanced Risk Analytics:** Computes Delta, Gamma, and Vega using the "Bump-and-Reset" method applied over stochastic trajectories.
@@ -12,7 +12,7 @@ This repository contains a production-grade pricing and risk engine for European
 
 ---
 
-## 🧮 Mathematical Framework
+## Mathematical Framework
 
 ### 1. Geometric Brownian Motion (GBM)
 The underlying asset price $S_t$ is modeled under the risk-neutral measure $\mathbb{Q}$ using the following Stochastic Differential Equation (SDE):
@@ -28,7 +28,7 @@ $$C_0=e^{-rT} \mathbb{E}^{\mathbb{Q}}[\max(S_T-K, 0)]$$
 
 ---
 
-## ⚙️ The Computational Engine: Vectorization & CRN
+## The Computational Engine: Vectorization & CRN
 
 A naive Monte Carlo implementation uses nested loops, resulting in heavy computational overhead. This engine leverages array programming to compute millions of paths concurrently. 
 
@@ -48,7 +48,7 @@ $$\nu \approx \frac{P(S_0, \sigma+\delta \sigma)-P(S_0, \sigma-\delta \sigma)}{2
 
 ---
 
-## 📊 Visual Analytics & Dashboards
+## Visual Analytics & Dashboards
 
 ### 1. Stochastic Trajectories (GBM)
 ![GBM Paths](./trajectories.png)
@@ -64,7 +64,7 @@ $$\nu \approx \frac{P(S_0, \sigma+\delta \sigma)-P(S_0, \sigma-\delta \sigma)}{2
 
 ---
 
-## 💻 Tech Stack & Usage
+## Tech Stack & Usage
 * **Language:** Python 3.10+
 * **Libraries:** `NumPy` (Vectorized Math), `SciPy` (Statistics & Benchmarking), `Matplotlib` (Data Visualization).
 
