@@ -50,8 +50,6 @@ $$\nu \approx \frac{P(S_0, \sigma+\delta \sigma)-P(S_0, \sigma-\delta \sigma)}{2
 
 ## 📊 Visual Analytics & Dashboards
 
-*(Note: Replace the placeholder links below with the actual paths to your screenshots once uploaded to the repository)*
-
 ### 1. Stochastic Trajectories (GBM)
 ![GBM Paths](assets/trajectories.png)
 *Visualization of 100 simulated asset paths across 252 trading days, demonstrating the exponential growth and variance dispersion over time.*
